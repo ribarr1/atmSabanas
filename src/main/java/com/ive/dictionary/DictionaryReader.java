@@ -6,6 +6,8 @@ import com.ive.model.ExcelDataRow;
 import com.ive.model.FieldDefinition;
 import com.ive.model.SheetDefinition;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -37,6 +39,13 @@ public class DictionaryReader {
     private static final String LABEL_POSICION       = "posicion de campos";
     private static final String LABEL_DESCRIPCION    = "descripcion";
     private static final String LABEL_CAMPO          = "campo";
+
+    /** Formats cells according to their Excel format (preserves dates and decimals). */
+    private static final DataFormatter DATA_FORMATTER = new DataFormatter();
+
+    /** Date pattern used in sábana TXT files. */
+    private static final java.time.format.DateTimeFormatter DATE_FMT =
+            java.time.format.DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     private final String dictionaryPath;
 
@@ -334,22 +343,45 @@ public class DictionaryReader {
         return switch (cell.getCellType()) {
             case STRING  -> cell.getStringCellValue();
             case NUMERIC -> {
-                double d = cell.getNumericCellValue();
-                if (d == Math.floor(d) && !Double.isInfinite(d)) {
-                    yield String.valueOf((long) d);
+                // Date cells: format as yyyy-MM-dd to match TXT format
+                if (DateUtil.isCellDateFormatted(cell)) {
+                    yield cell.getLocalDateTimeCellValue().toLocalDate().format(DATE_FMT);
                 }
-                yield String.valueOf(d);
+                // Numeric: preserve raw value with up to 2 decimals if needed
+                yield numericToString(cell.getNumericCellValue());
             }
             case BOOLEAN -> String.valueOf(cell.getBooleanCellValue());
             case FORMULA -> {
+                if (DateUtil.isCellDateFormatted(cell)) {
+                    try {
+                        yield cell.getLocalDateTimeCellValue().toLocalDate().format(DATE_FMT);
+                    } catch (Exception e) {
+                        yield "";
+                    }
+                }
                 try {
-                    yield cell.getStringCellValue();
+                    yield numericToString(cell.getNumericCellValue());
                 } catch (Exception e) {
-                    yield String.valueOf(cell.getNumericCellValue());
+                    yield cell.getStringCellValue();
                 }
             }
             default -> "";
         };
+    }
+
+    /**
+     * Converts a double cell value to a plain-string representation that matches
+     * how values appear in the pipe-delimited TXT files.
+     *
+     * <ul>
+     *   <li>Whole numbers (e.g. 10529.0) → "10529"</li>
+     *   <li>Decimals (e.g. 26080000.5) → "26080000.5"</li>
+     * </ul>
+     */
+    private static String numericToString(double d) {
+        java.math.BigDecimal bd = new java.math.BigDecimal(d);
+        bd = bd.stripTrailingZeros();
+        return bd.toPlainString();
     }
 
     /**

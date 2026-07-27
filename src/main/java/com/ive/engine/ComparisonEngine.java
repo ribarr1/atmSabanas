@@ -110,7 +110,7 @@ public class ComparisonEngine {
             String sabanaValue = (pos >= 1 && pos <= sabanaTokens.length)
                     ? sabanaTokens[pos - 1].trim() : "";
 
-            if (!excelValue.equalsIgnoreCase(sabanaValue)) {
+            if (!normalizeValue(excelValue).equals(normalizeValue(sabanaValue))) {
                 // Avoid double-reporting a REQUIRED error already captured
                 boolean alreadyRequired = errors.stream()
                         .anyMatch(e -> e.errorType() == ErrorType.REQUIRED
@@ -123,5 +123,31 @@ public class ComparisonEngine {
         }
 
         return errors;
+    }
+
+    /**
+     * Normalises a value for comparison:
+     * <ul>
+     *   <li>Case-insensitive (both lower-cased)</li>
+     *   <li>Leading/trailing whitespace removed</li>
+     *   <li>Numeric strings normalised to remove trailing zeros after decimal
+     *       (e.g. "0.00" == "0", "80000.00" == "80000", "1.80" stays "1.80")</li>
+     * </ul>
+     */
+    private static String normalizeValue(String raw) {
+        if (raw == null) return "";
+        String s = raw.trim().toLowerCase();
+        // Handle datetime vs date: if sábana has "yyyy-MM-dd HH:mm:ss" and Excel has "yyyy-MM-dd",
+        // compare only the date part (first 10 characters)
+        if (s.length() > 10 && s.charAt(4) == '-' && s.charAt(7) == '-' && s.charAt(10) == ' ') {
+            s = s.substring(0, 10);
+        }
+        // Try to parse as a number and normalise (removes trailing zeros: 0.00 == 0, 80000.00 == 80000)
+        try {
+            java.math.BigDecimal bd = new java.math.BigDecimal(s);
+            return bd.stripTrailingZeros().toPlainString();
+        } catch (NumberFormatException e) {
+            return s;
+        }
     }
 }

@@ -1,5 +1,7 @@
 package com.ive.engine;
 
+import com.ive.config.ConditionalRequiredConfig;
+import com.ive.config.ConditionalRequiredConfig.ConditionalRequiredRule;
 import com.ive.config.TabKeyConfig;
 import com.ive.exceptions.IveException;
 import com.ive.model.ComparisonSummary;
@@ -89,6 +91,40 @@ public class ComparisonEngine {
                     errors.add(new FieldError(fd.getFieldName(), ErrorType.REQUIRED, value, ""));
                 }
             }
+        }
+
+        // 1b. Conditional required field validation
+        List<ConditionalRequiredRule> condRules = ConditionalRequiredConfig.getRules(sheet.sheetName());
+        for (ConditionalRequiredRule rule : condRules) {
+            // Resolve the condition field by position
+            sheet.fields().stream()
+                    .filter(f -> f.getPosition() == rule.conditionPosition())
+                    .findFirst()
+                    .ifPresent(condField -> {
+                        String condValue = excelRow.get(condField.getFieldName());
+                        boolean conditionMet = rule.conditionValues().stream()
+                                .anyMatch(v -> v.equalsIgnoreCase(condValue));
+                        if (conditionMet) {
+                            for (int targetPos : rule.targetPositions()) {
+                                sheet.fields().stream()
+                                        .filter(f -> f.getPosition() == targetPos)
+                                        .findFirst()
+                                        .ifPresent(targetField -> {
+                                            String val = excelRow.get(targetField.getFieldName());
+                                            if (val == null || val.isBlank()) {
+                                                // Only report if not already flagged
+                                                boolean already = errors.stream().anyMatch(
+                                                        e -> e.fieldName().equalsIgnoreCase(targetField.getFieldName()));
+                                                if (!already) {
+                                                    errors.add(new FieldError(
+                                                            targetField.getFieldName(),
+                                                            ErrorType.REQUIRED, val, ""));
+                                                }
+                                            }
+                                        });
+                            }
+                        }
+                    });
         }
 
         // 2. Look up in sábana

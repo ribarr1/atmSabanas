@@ -11,20 +11,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.net.URISyntaxException;
+import java.util.Arrays;
+import java.util.List;
 
 /**
- * Application entry point for the Interface Validation Engine (IVE).
- *
- * <p>Usage: java -jar ive.jar &lt;dictionary.xlsx&gt; &lt;sabana.txt&gt;
- *
- * <p>Arguments:
- * <ul>
- *   <li>args[0] - path to the Excel Data Dictionary (contains data rows to validate)</li>
- *   <li>args[1] - path to the sábana TXT file (pipe-delimited, used as source of truth)</li>
- * </ul>
- *
- * <p>The tab matched inside the Excel is determined by the sábana file name.
- * The output is a new Excel file written to the same directory as the sábana.
+ * Usage (explicit): java -jar ive.jar &lt;dictionary.xlsx&gt; &lt;sabana.txt&gt;
+ * Usage (auto):     java -jar ive.jar
+ *   Auto mode picks the single .xlsx and single .txt found in the JAR's folder.
  */
 public class Main {
 
@@ -33,13 +27,42 @@ public class Main {
     public static void main(String[] args) {
         log.info("Interface Validation Engine - starting");
 
-        if (args.length < 2) {
-            log.error("Usage: ive.jar <dictionary.xlsx> <sabana.txt>");
-            System.exit(1);
-        }
+        String dictionaryPath;
+        String sabanaPath;
 
-        String dictionaryPath = args[0];
-        String sabanaPath     = args[1];
+        if (args.length >= 2) {
+            dictionaryPath = args[0];
+            sabanaPath     = args[1];
+        } else {
+            // Auto-detect files from the JAR's directory
+            File jarDir = resolveJarDirectory();
+            log.info("Auto mode — scanning: {}", jarDir.getAbsolutePath());
+
+            List<File> xlsxFiles = listByExtension(jarDir, ".xlsx");
+            List<File> txtFiles  = listByExtension(jarDir, ".txt");
+
+            if (xlsxFiles.isEmpty()) {
+                log.error("No .xlsx file found in {}. Place the Excel dictionary next to the JAR.", jarDir);
+                System.exit(1);
+            }
+            if (xlsxFiles.size() > 1) {
+                log.error("Multiple .xlsx files found in {}. Leave only one Excel file next to the JAR: {}",
+                        jarDir, xlsxFiles);
+                System.exit(1);
+            }
+            if (txtFiles.isEmpty()) {
+                log.error("No .txt file found in {}. Place the sábana TXT next to the JAR.", jarDir);
+                System.exit(1);
+            }
+            if (txtFiles.size() > 1) {
+                log.error("Multiple .txt files found in {}. Leave only one TXT file next to the JAR: {}",
+                        jarDir, txtFiles);
+                System.exit(1);
+            }
+
+            dictionaryPath = xlsxFiles.get(0).getAbsolutePath();
+            sabanaPath     = txtFiles.get(0).getAbsolutePath();
+        }
 
         log.info("Dictionary : {}", dictionaryPath);
         log.info("Sábana     : {}", sabanaPath);
@@ -104,6 +127,26 @@ public class Main {
     private static String extractSheetFragment(String fileName) {
         int dotIdx = fileName.lastIndexOf('.');
         return dotIdx > 0 ? fileName.substring(0, dotIdx) : fileName;
+    }
+
+    /** Returns the directory that contains the running JAR; falls back to working directory. */
+    private static File resolveJarDirectory() {
+        try {
+            File jar = new File(Main.class.getProtectionDomain()
+                    .getCodeSource().getLocation().toURI());
+            return jar.isFile() ? jar.getParentFile() : jar;
+        } catch (URISyntaxException e) {
+            return new File(System.getProperty("user.dir"));
+        }
+    }
+
+    /** Lists files in {@code dir} whose name ends with {@code extension} (case-insensitive), excluding result files. */
+    private static List<File> listByExtension(File dir, String extension) {
+        File[] files = dir.listFiles(f ->
+                f.isFile()
+                && f.getName().toLowerCase().endsWith(extension)
+                && !f.getName().startsWith("resultado_"));
+        return files == null ? List.of() : Arrays.asList(files);
     }
 }
 

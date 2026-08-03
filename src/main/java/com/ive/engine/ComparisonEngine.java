@@ -83,9 +83,14 @@ public class ComparisonEngine {
                                          List<String> keyFields) {
         List<FieldError> errors = new ArrayList<>();
 
-        // 1. Required field validation
+        // 1. Required field validation — skip fields governed by conditional rules
+        List<ConditionalRequiredRule> condRules = ConditionalRequiredConfig.getRules(sheet.sheetName());
+        java.util.Set<Integer> conditionalPositions = condRules.stream()
+                .flatMap(r -> r.targetPositions().stream())
+                .collect(java.util.stream.Collectors.toSet());
+
         for (FieldDefinition fd : sheet.fields()) {
-            if (fd.isRequired()) {
+            if (fd.isRequired() && !conditionalPositions.contains(fd.getPosition())) {
                 String value = excelRow.get(fd.getFieldName());
                 if (value == null || value.isBlank()) {
                     errors.add(new FieldError(fd.getFieldName(), ErrorType.REQUIRED, value, ""));
@@ -94,7 +99,6 @@ public class ComparisonEngine {
         }
 
         // 1b. Conditional required field validation
-        List<ConditionalRequiredRule> condRules = ConditionalRequiredConfig.getRules(sheet.sheetName());
         for (ConditionalRequiredRule rule : condRules) {
             // Resolve the condition field by position
             sheet.fields().stream()

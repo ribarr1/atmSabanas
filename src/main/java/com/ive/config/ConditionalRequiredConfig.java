@@ -54,10 +54,10 @@ public final class ConditionalRequiredConfig {
                     List.of("FVIV")
             ),
 
-            // Columns AD,AQ (pos 29,42)
+            // Columns AD,AP,AQ (pos 29,41,42)
             // Required if column D (do_codigo_producto, pos 3) = FGAR
             new ConditionalRequiredRule(
-                    List.of(29, 42),
+                    List.of(29, 41, 42),
                     3,
                     List.of("FGAR")
             ),

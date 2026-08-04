@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ive.dictionary.DictionaryReaderTest" time="2.99" tests="12" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes;C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\classes;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\mockito\mockito-junit-jupiter\5.12.0\mockito-junit-jupiter-5.12.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\mockito\mockito-core\5.12.0\mockito-core-5.12.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\RubenDarioIbarraVirl\AppData\Local\Temp\surefire470670998508131262\surefirebooter-20260803230901193_3.jar C:\Users\RubenDarioIbarraVirl\AppData\Local\Temp\surefire470670998508131262 2026-08-03T23-09-00_683-jvmRun1 surefire-20260803230901193_1tmp surefire_0-20260803230901193_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes;C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\classes;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\mockito\mockito-junit-jupiter\5.12.0\mockito-junit-jupiter-5.12.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\mockito\mockito-core\5.12.0\mockito-core-5.12.0.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\RubenDarioIbarraVirl\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\RubenDarioIbarraVirl"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\RubenDarioIbarraVirl\AppData\Local\Temp\surefire470670998508131262\surefirebooter-20260803230901193_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="RubenDarioIbarraVirl"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\RubenDarioIbarraVirl\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\RUBEND~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\RubenDarioIbarraVirl\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\RubenDarioIbarraVirl\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python313\Scripts\;C:\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\BackupClient\CommandLineTool\;C:\Program Files (x86)\Common Files\Acronis\FileProtector\;C:\Program Files (x86)\Common Files\Acronis\FileProtector64\;C:\Program Files\BackupClient\PyShell\bin\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\apache-maven-3.9.11\bin;C:\Program Files\Git\cmd;C:\Program Files\k6\;C:\Users\RubenDarioIbarraVirl\.local\bin;C:\Users\RubenDarioIbarraVirl\AppData\Local\Microsoft\WindowsApps;C:\Users\RubenDarioIbarraVirl\.dotnet\tools;C:\Users\RubenDarioIbarraVirl\AppData\Roaming\npm;C:\Users\RubenDarioIbarraVirl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\RubenDarioIbarraVirl\AppData\Local\Programs\Antigravity\bin;C:\Users\RubenDarioIbarraVirl\AppData\Roaming\Python\Python313\Scripts;C:\Users\RubenDarioIbarraVirl\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\RubenDarioIbarraVirl\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testMultiSheet_invalidSheetIsSkipped" classname="com.ive.dictionary.DictionaryReaderTest" time="1.855">
+    <system-out><![CDATA[23:09:03.364 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-multi-sheet.xlsx
+23:09:04.488 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 2 sheet(s).
+23:09:04.504 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'valid_sheet': 2 field(s), 0 data row(s) loaded.
+23:09:04.507 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'invalid_sheet': missing 'POSICION DE CAMPOS' row. Skipping.
+23:09:04.508 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+]]></system-out>
+    <system-err><![CDATA[ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+]]></system-err>
+  </testcase>
+  <testcase name="testCampoFallback_fieldNamesReadFromNextRow" classname="com.ive.dictionary.DictionaryReaderTest" time="0.047">
+    <system-out><![CDATA[23:09:04.527 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-campo-fallback.xlsx
+23:09:04.566 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+23:09:04.568 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'test_fallback': CAMPO row (index 3) has no field names. Using next row as fallback.
+23:09:04.569 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_fallback': 2 field(s), 0 data row(s) loaded.
+23:09:04.571 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+]]></system-out>
+  </testcase>
+  <testcase name="testSimpleSheet_obligatoriedad_si" classname="com.ive.dictionary.DictionaryReaderTest" time="0.04">
+    <system-out><![CDATA[23:09:04.575 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
+23:09:04.606 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+23:09:04.609 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
+23:09:04.610 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+]]></system-out>
+  </testcase>
+  <testcase name="testSimpleSheet_fieldPositionsAreOrdered" classname="com.ive.dictionary.DictionaryReaderTest" time="0.044">
+    <system-out><![CDATA[23:09:04.617 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
+23:09:04.654 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+23:09:04.656 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
+23:09:04.657 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+]]></system-out>
+  </testcase>
+  <testcase name="testFindSheet_matchesByFragment" classname="com.ive.dictionary.DictionaryReaderTest" time="0.038">
+    <system-out><![CDATA[23:09:04.660 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
+23:09:04.693 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+23:09:04.695 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
+23:09:04.695 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+]]></system-out>
+  </testcase>
+  <testcase name="testSimpleSheet_detectsLabelsAndBuildsFields" classname="com.ive.dictionary.DictionaryReaderTest" time="0.051">
+    <system-out><![CDATA[23:09:04.707 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
+23:09:04.749 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+23:09:04.752 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
+23:09:04.752 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+]]></system-out>
+  </testcase>
+  <testcase name="testFileNotFound_throwsIveException" classname="com.ive.dictionary.DictionaryReaderTest" time="0.007"/>
+  <testcase name="testFindSheet_noMatchReturnsEmpty" classname="com.ive.dictionary.DictionaryReaderTest" time="0.047">
+    <system-out><![CDATA[23:09:04.766 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
+23:09:04.806 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+23:09:04.808 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
+23:09:04.808 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+]]></system-out>
+  </testcase>
+  <testcase name="testConditionalObligatoriedad_treatedAsRequired" classname="com.ive.dictionary.DictionaryReaderTest" time="0.03">
+    <system-out><![CDATA[23:09:04.814 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-conditional-obligatoriedad.xlsx
+23:09:04.841 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+23:09:04.842 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'test_conditional': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA)' treated as REQUIRED.
+23:09:04.842 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_conditional': 3 field(s), 0 data row(s) loaded.
+23:09:04.842 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+]]></system-out>
+  </testcase>
+  <testcase name="testSimpleSheet_fieldNamesAreCorrect" classname="com.ive.dictionary.DictionaryReaderTest" time="0.033">
+    <system-out><![CDATA[23:09:04.847 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
+23:09:04.874 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+23:09:04.875 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
+23:09:04.875 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+]]></system-out>
+  </testcase>
+  <testcase name="integrationTest_realDictionary_loadsSuccessfully" classname="com.ive.dictionary.DictionaryReaderTest" time="0.694">
+    <system-out><![CDATA[23:09:04.880 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\Sabanas Fondos Diccionario de Datos V8 QA.xlsx
+23:09:05.402 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 7 sheet(s).
+23:09:05.406 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_transacciones_fondos', column 20: invalid position '}'. Skipping.
+23:09:05.408 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_transacciones_fondos': 29 field(s), 0 data row(s) loaded.
+23:09:05.409 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': CAMPO row (index 3) has no field names. Using next row as fallback.
+23:09:05.430 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
+23:09:05.431 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
+23:09:05.431 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
+23:09:05.431 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de Vivienda y Garantía' treated as REQUIRED.
+23:09:05.432 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
+23:09:05.432 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
+23:09:05.432 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
+23:09:05.433 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
+23:09:05.433 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
+23:09:05.434 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
+23:09:05.434 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
+23:09:05.435 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
+23:09:05.436 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
+23:09:05.502 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': 49 field(s), 13 data row(s) loaded.
+23:09:05.504 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_cuentas_por_cobrar': 27 field(s), 0 data row(s) loaded.
+23:09:05.507 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_tasa_compensada': 32 field(s), 0 data row(s) loaded.
+23:09:05.508 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_revalorizacion_20270': 16 field(s), 0 data row(s) loaded.
+23:09:05.510 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.510 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.510 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.511 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.511 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA, AUX). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.512 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA, AUX, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.512 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AUX, CEA, REC, LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.512 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.512 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.512 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.513 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.513 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.513 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.514 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.514 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.514 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.515 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.515 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.516 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.516 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.516 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.517 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.517 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.517 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.518 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.518 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ,AUX,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.518 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.518 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.518 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.520 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.520 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ) y tipo de liquidación es excluSIón. Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.521 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.521 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.521 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.521 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.522 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ) y es una liquidación maSIva. Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.522 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.522 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.523 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.523 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.524 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.524 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.524 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.524 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.524 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.525 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+23:09:05.527 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': 75 field(s), 0 data row(s) loaded.
+23:09:05.538 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_traslados': 17 field(s), 0 data row(s) loaded.
+23:09:05.539 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 7 valid sheet(s).
+=== Dictionary Model ===
+Total sheets: 7
+
+Sheet: sb_dato_transacciones_fondos (29 fields)
+  [ 1] dt_secuencial                  REQUIRED
+  [ 2] dt_op_id                       REQUIRED
+  [ 3] dt_vc_id                       OPTIONAL
+  [ 4] dt_estado                      REQUIRED
+  [ 5] dt_tipo_transaccion            REQUIRED
+  [ 6] dt_afectacion                  REQUIRED
+  [ 7] dt_moneda                      REQUIRED
+  [ 8] dt_monto                       REQUIRED
+  [ 9] dt_monto_impuesto              OPTIONAL
+  [10] dt_filial                      REQUIRED
+  [11] dt_oficina                     REQUIRED
+  [12] dt_usuario                     REQUIRED
+  [13] dt_terminal                    REQUIRED
+  [14] dt_canal                       REQUIRED
+  [15] dt_fecha_crea                  REQUIRED
+  [16] dt_usuario_ult_mod             REQUIRED
+  [17] dt_fecha_ult_mod               REQUIRED
+  [18] dt_tipo_ejecucion              REQUIRED
+  [19] dt_causa                       OPTIONAL
+  [21] dt_aplicativo                  REQUIRED
+  [22] dt_fecha                       REQUIRED
+  [23] dt_id_interface                REQUIRED
+  [24] dt_origen                      REQUIRED
+  [25] dt_fecha_proceso               REQUIRED
+  [26] dt_porcentaje_retencion        OPTIONAL
+  [27] dt_valor_retencion             OPTIONAL
+  [28] dt_valor_recibir               OPTIONAL
+  [29] dt_cob_asociado                OPTIONAL
+  [30] dt_comprobante                 OPTIONAL
+
+Sheet:    sb_dato_operacion_fondos_202 (49 fields)
+  [ 1] do_id                          REQUIRED
+  [ 2] do_ente                        REQUIRED
+  [ 3] do_codigo_producto             REQUIRED
+  [ 4] do_nombre_ente                 REQUIRED
+  [ 5] do_tipo                        REQUIRED
+  [ 6] do_fecha_inicio_operacion      REQUIRED
+  [ 7] do_estado                      REQUIRED
+  [ 8] do_saldo_total                 REQUIRED
+  [ 9] do_saldo_pendiente             REQUIRED
+  [10] do_id_cuenta_depositos_vista   REQUIRED
+  [11] do_usuario                     OPTIONAL
+  [12] do_moneda                      REQUIRED
+  [13] do_filial                      REQUIRED
+  [14] do_oficina                     REQUIRED
+  [15] do_oficial                     REQUIRED
+  [16] do_fecha_ult_mov               OPTIONAL
+  [17] do_fecha_ult_act               REQUIRED
+  [18] do_institucion                 REQUIRED
+  [19] do_producto_institucion        REQUIRED
+  [20] do_plazo                       REQUIRED
+  [21] do_monto                       REQUIRED
+  [22] do_fecha_operacion             OPTIONAL
+  [23] do_fecha_corte                 OPTIONAL
+  [24] do_antiguedad_asociado         REQUIRED
+  [25] do_ingresos_asociados          REQUIRED
+  [26] do_porcentaje_contribucion     REQUIRED
+  [27] do_plazo_maximo                REQUIRED
+  [28] do_SMMLV                       REQUIRED
+  [29] do_cuota_mensual               REQUIRED
+  [30] do_descuenta_credito           REQUIRED
+  [31] do_puntos_compensacion         REQUIRED
+  [32] do_valor_contribucion          REQUIRED
+  [33] do_tasa_full                   REQUIRED
+  [34] do_monto_real_operacion        OPTIONAL
+  [35] do_monto_base_fondo_garantia   OPTIONAL
+  [36] do_numero_cuota_inicio_compensacion OPTIONAL
+  [37] do_numero_operacion_credito_hipotecario OPTIONAL
+  [38] do_numero_operacion_credito_patrimonial OPTIONAL
+  [39] do_id_liquidacion              OPTIONAL
+  [40] do_fecha fin_operacion         OPTIONAL
+  [41] do_monto_pagado_fondo_garantia REQUIRED
+  [42] do_fecha_inicio_credito        REQUIRED
+  [43] do_operacion_anterior          OPTIONAL
+  [44] do_dias_mora                   REQUIRED
+  [45] do_codigo_cuenta               REQUIRED
+  [46] do_aplicativo                  REQUIRED
+  [47] do_fecha                       REQUIRED
+  [48] do_id_interface                REQUIRED
+  [49] do_origen                      REQUIRED
+
+Sheet: sb_dato_cuentas_por_cobrar (27 fields)
+  [ 1] dc_id                          REQUIRED
+  [ 2] dc_ent                         REQUIRED
+  [ 3] dc_usuario                     REQUIRED
+  [ 4] dc_estado                      REQUIRED
+  [ 5] dc_fecha_crea                  REQUIRED
+  [ 6] dc_fecha_ult_mod               OPTIONAL
+  [ 7] dc_fecha_pago                  OPTIONAL
+  [ 8] dc_monto                       REQUIRED
+  [ 9] dc_monto_pagado                REQUIRED
+  [10] dc_concepto_fac                REQUIRED
+  [11] dc_moned                       REQUIRED
+  [12] dc_tipo_ejecucion              REQUIRED
+  [13] dc_filial                      REQUIRED
+  [14] dc_oficina                     REQUIRED
+  [15] dc_mes                         REQUIRED
+  [16] dc_anio                        REQUIRED
+  [17] dc_codigo_orden_fac            OPTIONAL
+  [18] dc_fecha_vencimiento           OPTIONAL
+  [19] dc_monto_total_vencido         REQUIRED
+  [20] dc_codigo_producto             REQUIRED
+  [21] dc_op_id                       REQUIRED
+  [22] dc_aplicativo                  REQUIRED
+  [23] dc_fecha                       REQUIRED
+  [24] dc_id_interface                REQUIRED
+  [25] dc_origen                      REQUIRED
+  [26] dc_fecha_proceso               REQUIRED
+  [27] dc_periodo_facturacion         REQUIRED
+
+Sheet: sb_dato_tasa_compensada (32 fields)
+  [ 1] dt_operacion_id                REQUIRED
+  [ 2] dt_cliente_id                  REQUIRED
+  [ 3] dt_codigo_producto             REQUIRED
+  [ 4] dt_fecha_inicio_operacion      REQUIRED
+  [ 5] dt_estado_operacion            REQUIRED
+  [ 6] dt_saldo_total                 REQUIRED
+  [ 7] dt_saldo_pendiente             REQUIRED
+  [ 8] dt_id_cuenta_depositos_vi
+sta  REQUIRED
+  [ 9] dt_usuario                     OPTIONAL
+  [10] dt_oficial                     OPTIONAL
+  [11] dt_fecha_ult_mov               OPTIONAL
+  [12] dt_fecha_ult_act               OPTIONAL
+  [13] dt_id                          REQUIRED
+  [14] dt_estado                      REQUIRED
+  [15] dt_fecha_crea                  REQUIRED
+  [16] dt_fecha_ult_mod               OPTIONAL
+  [17] dt_fecha_pago                  OPTIONAL
+  [18] dt_monto                       REQUIRED
+  [19] dt_monto_pagado                OPTIONAL
+  [20] dt_moneda                      REQUIRED
+  [21] dt_filial                      OPTIONAL
+  [22] dt_oficina                     OPTIONAL
+  [23] dt_mes                         OPTIONAL
+  [24] dt_anio                        OPTIONAL
+  [25] dt_producto_id                 REQUIRED
+  [26] dt_institucion                 REQUIRED
+  [27] dt_producto_institucion        REQUIRED
+  [28] dt_aplicativo                  REQUIRED
+  [29] dt_fecha                       REQUIRED
+  [30] dt_id_interface                REQUIRED
+  [31] dt_origen                      REQUIRED
+  [32] dt_fecha_proceso               REQUIRED
+
+Sheet:    sb_dato_revalorizacion_20270 (16 fields)
+  [ 1] dr_id_asociado                 REQUIRED
+  [ 2] dr_documento_tipo              REQUIRED
+  [ 3] dr_documento_numero            REQUIRED
+  [ 4] dr_nombre_asociado             REQUIRED
+  [ 5] dr_estado_asociado             REQUIRED
+  [ 6] dr_fecha_vinculacion           OPTIONAL
+  [ 7] dr_fecha_desvinculacion        REQUIRED
+  [ 8] dr_monto_total_aportes         REQUIRED
+  [ 9] dr_valor_promedio              REQUIRED
+  [10] dr_revalorizacion_por_pagar    REQUIRED
+  [11] dr_fecha_proceso               REQUIRED
+  [12] dr_fecha                       REQUIRED
+  [13] dr_empresa                     REQUIRED
+  [14] dr_aplicativo                  REQUIRED
+  [15] dr_origen                      OPTIONAL
+  [16] dr_id_interface                OPTIONAL
+
+Sheet: sb_dato_procesos_especiales (75 fields)
+  [ 1] dp_proceso_especial            REQUIRED
+  [ 2] dp_secuencial_proceso          REQUIRED
+  [ 3] dp_cliente_id                  OPTIONAL
+  [ 4] dp_estado                      REQUIRED
+  [ 5] dp_aplicacion_previa           REQUIRED
+  [ 6] dp_monto_aporte                REQUIRED
+  [ 7] dp_monto_pignorado             REQUIRED
+  [ 8] dp_monto_aporte_disponib le    REQUIRED
+  [ 9] dp_monto_solicitado            REQUIRED
+  [10] dp_monto_aprobado              REQUIRED
+  [11] dp_motivo                      REQUIRED
+  [12] dp_campania                    OPTIONAL
+  [13] dp_id_cedente                  REQUIRED
+  [14] dp_id_cesionario               REQUIRED
+  [15] dp_valor_conserva              REQUIRED
+  [16] dp_valor_transferir_cesionario REQUIRED
+  [17] dp_tiempo_sugerido             REQUIRED
+  [18] dp_tiempo                      REQUIRED
+  [19] dp_fecha_vencimiento           REQUIRED
+  [20] dp_id_liquidacion              REQUIRED
+  [21] dp_fecha_liquidacion           REQUIRED
+  [22] dp_motivo_liquidacion          REQUIRED
+  [23] dp_monto_liquidacion           REQUIRED
+  [24] dp_estado_orden_pago_liq uidacion REQUIRED
+  [25] dp_orden_pago_liquidacio n     REQUIRED
+  [26] dp_valor_transferir            REQUIRED
+  [27] dp_valor_no_reclamados         REQUIRED
+  [28] dp_codigo_destino              REQUIRED
+  [29] dp_codigo_origen               REQUIRED
+  [30] dp_saldo_a_favor               REQUIRED
+  [31] dp_ids_orden_pago              REQUIRED
+  [32] dp_fecha_anulacion             REQUIRED
+  [33] dp_fecha_inicio_proceso_a probacion REQUIRED
+  [34] dp_tipo_ejecucion              REQUIRED
+  [35] dp_fecha_fallecimiento         REQUIRED
+  [36] dp_motivo_exclusion            REQUIRED
+  [37] dp_id_solicitud_anulacion      REQUIRED
+  [38] dp_fecha_solicitud_anulaci on  REQUIRED
+  [39] dp_id_funcionario_solicitud _anulacion REQUIRED
+  [40] dp_estado_solicitud_anula cion REQUIRED
+  [41] dp_archivo_liquidacion_id      REQUIRED
+  [42] dp_nombre_archivo              REQUIRED
+  [43] dp_id_oficial_aprobador        OPTIONAL
+  [44] dp_id_oficial_creacion         REQUIRED
+  [45] dp_monto_cuentas_cobrar        OPTIONAL
+  [46] dp_monto_recibir               REQUIRED
+  [47] dp_fecha_aprobacion            REQUIRED
+  [48] dp_fecha_solicitud             REQUIRED
+  [49] dp_observacion                 REQUIRED
+  [50] dp_oficina                     REQUIRED
+  [51] dp_moneda                      REQUIRED
+  [52] dp_canal                       REQUIRED
+  [53] dp_fecha_ultima_actualiza cion OPTIONAL
+  [54] dp_usuario_ultima_actualiz acion OPTIONAL
+  [55] dp_codigo_beneficiarios        REQUIRED
+  [56] dp_aplicativo                  REQUIRED
+  [57] dp_fecha                       REQUIRED
+  [58] dp_id_interface                REQUIRED
+  [59] dp_origen                      REQUIRED
+  [60] dp_fecha_proc                  REQUIRED
+  [61] dp_fecha_generacion            REQUIRED
+  [62] dp_antiguedad                  REQUIRED
+  [63] dp_solicitud_calamidad         OPTIONAL
+  [64] dp_fallecimiento_fam           OPTIONAL
+  [65] dp_afectacion_solidaridad      OPTIONAL
+  [66] dp_tratamiento_especial        OPTIONAL
+  [67] dp_convenio_funerario          OPTIONAL
+  [68] dp_sipas_mutual                OPTIONAL
+  [69] dp_afectacion_parcial          REQUIRED
+  [70] dp_soporte_fisico              REQUIRED
+  [71] dp_tipo_reactivacion           REQUIRED
+  [72] dp_dias_corte                  REQUIRED
+  [73] dp_monto_condonado             OPTIONAL
+  [74] dp_monto_asociado              OPTIONAL
+  [75] dp_fecha_pago                  OPTIONAL
+
+Sheet:    sb_dato_traslados (17 fields)
+  [ 1] dt_fecha                       REQUIRED
+  [ 2] dt_empresa                     REQUIRED
+  [ 3] dt_aplicativo                  REQUIRED
+  [ 4] dt_id_asociado                 REQUIRED
+  [ 5] dt_nombre_asociado             OPTIONAL
+  [ 6] dt_documento_tipo              OPTIONAL
+  [ 7] dt_documento_numero            REQUIRED
+  [ 8] dt_secuencial_orden_pago       REQUIRED
+  [ 9] dt_tipo_solicitud              REQUIRED
+  [10] dt_tipo_orden_pago             REQUIRED
+  [11] dt_monto_traslado              REQUIRED
+  [12] dt_fecha_creacion              REQUIRED
+  [13] dt_fecha_vencimiento           OPTIONAL
+  [14] dt_fecha_traslado              OPTIONAL
+  [15] dt_fecha_proceso               REQUIRED
+  [16] dt_origen                      REQUIRED
+  [17] dt_id_interface                REQUIRED
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="testMultiSheet_validSheetFieldsAreCorrect" classname="com.ive.dictionary.DictionaryReaderTest" time="0.031">
+    <system-out><![CDATA[23:09:05.574 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-multi-sheet.xlsx
+23:09:05.602 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 2 sheet(s).
+23:09:05.602 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'valid_sheet': 2 field(s), 0 data row(s) loaded.
+23:09:05.603 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'invalid_sheet': missing 'POSICION DE CAMPOS' row. Skipping.
+23:09:05.603 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+]]></system-out>
+  </testcase>
+</testsuite>

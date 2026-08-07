@@ -27,6 +27,7 @@ public final class TabKeyConfig {
         m.put("sb_dato_operacion_fondos",       List.of("do_id",          "do_ente"));
         m.put("sb_dato_cuentas_por_cobrar",     List.of("dc_ent",         "dc_op_id"));
         m.put("sb_dato_tasa_compensada",        List.of("dt_operacion_id","dt_cliente_id"));
+        m.put("sb_dato_procesos_especiales",    List.of("dp_proceso_especial", "dp_secuencial_proceso"));
         KEY_MAP = Collections.unmodifiableMap(m);
     }
 

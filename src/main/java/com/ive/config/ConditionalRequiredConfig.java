@@ -46,10 +46,10 @@ public final class ConditionalRequiredConfig {
                     List.of("FVIV", "FGAR")
             ),
 
-            // Columns AC,AF,AH (pos 28,31,33)
+            // Columns AB, AC,AF,AH (pos 28,31,33)
             // Required if column D (do_codigo_producto, pos 3) = FVIV
             new ConditionalRequiredRule(
-                    List.of(28, 31, 33),
+                    List.of(27, 28, 31, 33),
                     3,
                     List.of("FVIV")
             ),
@@ -76,6 +76,40 @@ public final class ConditionalRequiredConfig {
                 "sb_dato_transacciones_fondos", List.of(
                         // Col G (pos 6): required only if its own value is C (Credito) or D (Debito)
                         new ConditionalRequiredRule(List.of(6), 6, List.of("C", "D"))
+                ),
+                "sb_dato_procesos_especiales", List.of(
+                        // pos 5 (dp_aplicacion_previa): AMA
+                        new ConditionalRequiredRule(List.of(5), 1, List.of("AMA")),
+                        // pos 6 (dp_monto_aporte): AMA, CEA, LIQ
+                        new ConditionalRequiredRule(List.of(6), 1, List.of("AMA", "CEA", "LIQ")),
+                        // pos 7,8 (dp_monto_pignorado, dp_monto_aporte_disponible): AMA, CEA
+                        new ConditionalRequiredRule(List.of(7, 8), 1, List.of("AMA", "CEA")),
+                        // pos 9 (dp_monto_solicitado): AMA, AUX
+                        new ConditionalRequiredRule(List.of(9), 1, List.of("AMA", "AUX")),
+                        // pos 10 (dp_monto_aprobado): AMA, AUX, REAC
+                        new ConditionalRequiredRule(List.of(10), 1, List.of("AMA", "AUX", "REAC")),
+                        // pos 11 (dp_motivo): AUX, CEA, REC, LIQ
+                        new ConditionalRequiredRule(List.of(11), 1, List.of("AUX", "CEA", "REC", "LIQ")),
+                        // pos 13-16 (dp_id_cedente..dp_valor_transferir_cesionario): CEA
+                        new ConditionalRequiredRule(List.of(13, 14, 15, 16), 1, List.of("CEA")),
+                        // pos 17-19 (dp_tiempo_sugerido, dp_tiempo, dp_fecha_vencimiento): REC
+                        new ConditionalRequiredRule(List.of(17, 18, 19), 1, List.of("REC")),
+                        // pos 20-24 (dp_id_liquidacion..dp_estado_orden_pago_liquidacion): REI
+                        new ConditionalRequiredRule(List.of(20, 21, 22, 23, 24), 1, List.of("REI")),
+                        // pos 25 (dp_orden_pago_liquidacion): LIQ, REI
+                        new ConditionalRequiredRule(List.of(25), 1, List.of("LIQ", "REI")),
+                        // pos 26-29 (dp_valor_transferir..dp_codigo_origen): TEF
+                        new ConditionalRequiredRule(List.of(26, 27, 28, 29), 1, List.of("TEF")),
+                        // pos 31 (dp_ids_orden_pago): LIQ, AUX, CEA
+                        new ConditionalRequiredRule(List.of(31), 1, List.of("LIQ", "AUX", "CEA")),
+                        // pos 30,32-42,46,55: LIQ only
+                        new ConditionalRequiredRule(
+                                List.of(30, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 46, 55), 1,
+                                List.of("LIQ")),
+                        // pos 44,47-52 (dp_id_oficial_creacion, dp_fecha_aprobacion, etc.): all types
+                        new ConditionalRequiredRule(
+                                List.of(44, 47, 48, 49, 50, 51, 52), 1,
+                                List.of("AMA", "CEA", "AUX", "LIQ", "REC", "REI", "TEF", "REAC"))
                 )
         );
     }

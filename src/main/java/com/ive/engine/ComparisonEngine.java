@@ -147,6 +147,14 @@ public class ComparisonEngine {
             String excelValue  = excelRow.get(fieldName).trim();
 
             int pos = fd.getPosition(); // 1-based
+
+            // Skip comparison for conditional fields when Excel says Null or is empty
+            // (value is not applicable for this record's process type)
+            boolean isNullOrEmpty = excelValue.isEmpty() || excelValue.equalsIgnoreCase("null");
+            if (isNullOrEmpty && conditionalPositions.contains(pos)) {
+                continue;
+            }
+
             String sabanaValue = (pos >= 1 && pos <= sabanaTokens.length)
                     ? sabanaTokens[pos - 1].trim() : "";
 

@@ -1,293 +1,115 @@
-2026-08-03 12:09:24.859 [INFO ] com.ive.Main - Interface Validation Engine - starting
-2026-08-03 12:09:24.879 [INFO ] com.ive.Main - Dictionary : C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\test\sabana.xlsx
-2026-08-03 12:09:24.881 [INFO ] com.ive.Main - Sábana     : C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\test\sb_dato_transacciones_fondos_20271221.txt
-2026-08-03 12:09:25.020 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\test\sabana.xlsx
-2026-08-03 12:09:26.548 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 7 sheet(s).
-2026-08-03 12:09:26.584 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 12:09:26.588 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 12:09:26.588 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 12:09:26.590 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de Vivienda y Garantía' treated as REQUIRED.
-2026-08-03 12:09:26.590 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
-2026-08-03 12:09:26.590 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
-2026-08-03 12:09:26.590 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
-2026-08-03 12:09:26.590 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 12:09:26.592 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
-2026-08-03 12:09:26.594 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 12:09:26.594 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
-2026-08-03 12:09:26.596 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de garantía
-En la sabana de operación visualizar la sumatoria de los valores pagados por garantía (join de la tabla)  "Sumatoria de montos pagados por el fondo de grantia en estado (Reclamación parcial, ReclamaciónTotal' treated as REQUIRED.
-2026-08-03 12:09:26.598 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
-2026-08-03 12:09:26.598 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si, aplica para Fondos Estatutarios que tiene contribución periódica' treated as REQUIRED.
-2026-08-03 12:09:26.678 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': 49 field(s), 4 data row(s) loaded.
-2026-08-03 12:09:26.680 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_transacciones_fondos': conditional OBLIGATORIEDAD 'SI
-C: Crédito, D:Débito, T:Transacciones de Servicio
-Las transacciones de servicio aplica para transacciones NO Monetarias' treated as REQUIRED.
-2026-08-03 12:09:26.696 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_transacciones_fondos': 30 field(s), 4 data row(s) loaded.
-2026-08-03 12:09:26.708 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_cuentas_por_cobrar': 27 field(s), 3 data row(s) loaded.
-2026-08-03 12:09:26.712 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_revalorizacion': 16 field(s), 0 data row(s) loaded.
-2026-08-03 12:09:26.712 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.712 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.712 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.712 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.714 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA, AUX). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.714 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA, AUX, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.714 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AUX, CEA, REC, LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.714 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.714 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.716 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.716 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.716 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.716 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.717 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.717 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.718 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.718 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.718 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.718 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.718 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (LIQ, REI) y existan órdenes de pago generadas.
-Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.718 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.720 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.720 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.720 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.732 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.732 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ,AUX,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.733 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.733 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.734 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.735 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.735 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ) y tipo de liquidación es excluSIón. Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.736 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.736 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.736 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.736 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.737 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ) y es una liquidación maSIva. Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.738 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.738 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.738 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.738 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF,REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.739 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.739 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.739 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF,REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.740 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.742 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.744 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:09:26.749 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': 75 field(s), 0 data row(s) loaded.
-2026-08-03 12:09:26.755 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_tasa_compensada': 32 field(s), 0 data row(s) loaded.
-2026-08-03 12:09:26.757 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_traslados': 17 field(s), 0 data row(s) loaded.
-2026-08-03 12:09:26.759 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 7 valid sheet(s).
-2026-08-03 12:09:26.760 [INFO ] com.ive.Main - Dictionary loaded: 7 sheet(s).
-2026-08-03 12:09:26.760 [INFO ] com.ive.Main - Looking for sheet matching fragment: 'sb_dato_transacciones_fondos_20271221'
-2026-08-03 12:09:26.762 [INFO ] com.ive.Main - Matched sheet: 'sb_dato_transacciones_fondos' (30 fields, 4 Excel data row(s))
-2026-08-03 12:09:26.770 [INFO ] com.ive.engine.ComparisonEngine - Key fields for 'sb_dato_transacciones_fondos': [dt_op_id, dt_cob_asociado]
-2026-08-03 12:09:26.774 [ERROR] com.ive.Main - Fatal error: Interface file not found: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\test\sb_dato_transacciones_fondos_20271221.txt
-com.ive.exceptions.IveException: Interface file not found: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\test\sb_dato_transacciones_fondos_20271221.txt
-	at com.ive.util.FlatFileReader.readLines(FlatFileReader.java:45)
-	at com.ive.engine.SabanaIndex.<init>(SabanaIndex.java:45)
-	at com.ive.engine.ComparisonEngine.compare(ComparisonEngine.java:58)
-	at com.ive.Main.main(Main.java:71)
-2026-08-03 12:21:40.956 [INFO ] com.ive.Main - Interface Validation Engine - starting
-2026-08-03 12:21:40.966 [INFO ] com.ive.Main - Dictionary : C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\test\sabana.xlsx
-2026-08-03 12:21:40.968 [INFO ] com.ive.Main - Sábana     : C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\test\sb_dato_operacion_fondos_20271221.txt
-2026-08-03 12:21:41.153 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\test\sabana.xlsx
-2026-08-03 12:21:44.496 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 7 sheet(s).
-2026-08-03 12:21:44.581 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 12:21:44.585 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 12:21:44.586 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 12:21:44.587 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de Vivienda y Garantía' treated as REQUIRED.
-2026-08-03 12:21:44.594 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
-2026-08-03 12:21:44.596 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
-2026-08-03 12:21:44.603 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
-2026-08-03 12:21:44.603 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 12:21:44.605 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
-2026-08-03 12:21:44.606 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 12:21:44.606 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
-2026-08-03 12:21:44.608 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de garantía
-En la sabana de operación visualizar la sumatoria de los valores pagados por garantía (join de la tabla)  "Sumatoria de montos pagados por el fondo de grantia en estado (Reclamación parcial, ReclamaciónTotal' treated as REQUIRED.
-2026-08-03 12:21:44.609 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
-2026-08-03 12:21:44.611 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': conditional OBLIGATORIEDAD 'Si, aplica para Fondos Estatutarios que tiene contribución periódica' treated as REQUIRED.
-2026-08-03 12:21:44.718 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos': 49 field(s), 4 data row(s) loaded.
-2026-08-03 12:21:44.721 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_transacciones_fondos': conditional OBLIGATORIEDAD 'SI
-C: Crédito, D:Débito, T:Transacciones de Servicio
-Las transacciones de servicio aplica para transacciones NO Monetarias' treated as REQUIRED.
-2026-08-03 12:21:44.738 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_transacciones_fondos': 30 field(s), 4 data row(s) loaded.
-2026-08-03 12:21:44.754 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_cuentas_por_cobrar': 27 field(s), 3 data row(s) loaded.
-2026-08-03 12:21:44.757 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_revalorizacion': 16 field(s), 0 data row(s) loaded.
-2026-08-03 12:21:44.758 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.759 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.760 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.761 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.762 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA, AUX). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.763 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA, AUX, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.764 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AUX, CEA, REC, LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.765 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.766 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.767 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.767 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.767 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.767 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.767 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.769 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.769 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.770 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.771 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.771 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.772 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (LIQ, REI) y existan órdenes de pago generadas.
-Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.773 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.773 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.774 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.778 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.778 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.779 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ,AUX,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.780 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.780 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.781 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.782 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.783 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ) y tipo de liquidación es excluSIón. Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.783 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.784 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.784 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.785 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.785 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ) y es una liquidación maSIva. Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.786 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.786 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.786 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.786 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF,REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.788 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.796 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.797 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF,REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.800 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.801 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'Si cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.802 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 12:21:44.806 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': 75 field(s), 0 data row(s) loaded.
-2026-08-03 12:21:44.812 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_tasa_compensada': 32 field(s), 0 data row(s) loaded.
-2026-08-03 12:21:44.817 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_traslados': 17 field(s), 0 data row(s) loaded.
-2026-08-03 12:21:44.819 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 7 valid sheet(s).
-2026-08-03 12:21:44.821 [INFO ] com.ive.Main - Dictionary loaded: 7 sheet(s).
-2026-08-03 12:21:44.821 [INFO ] com.ive.Main - Looking for sheet matching fragment: 'sb_dato_operacion_fondos_20271221'
-2026-08-03 12:21:44.824 [INFO ] com.ive.Main - Matched sheet: '   sb_dato_operacion_fondos' (49 fields, 4 Excel data row(s))
-2026-08-03 12:21:44.830 [INFO ] com.ive.engine.ComparisonEngine - Key fields for '   sb_dato_operacion_fondos': [do_id, do_ente]
-2026-08-03 12:21:44.835 [INFO ] com.ive.util.FlatFileReader - Reading interface file: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\test\sb_dato_operacion_fondos_20271221.txt
-2026-08-03 12:21:44.854 [INFO ] com.ive.util.FlatFileReader - Interface file loaded: 37 line(s).
-2026-08-03 12:21:44.906 [INFO ] com.ive.engine.SabanaIndex - SabanaIndex built: 37 record(s) indexed.
-2026-08-03 12:21:44.960 [INFO ] com.ive.engine.ComparisonEngine - Comparison complete: 4/4 Excel row(s) have errors.
-2026-08-03 12:21:44.968 [INFO ] com.ive.excel.ResultWriter - Writing result file: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\test\resultado_sb_dato_operacion_fondos_20260803_122144.xlsx
-2026-08-03 12:21:48.931 [INFO ] com.ive.excel.ResultWriter - Result file saved: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\test\resultado_sb_dato_operacion_fondos_20260803_122144.xlsx
-2026-08-03 12:21:48.931 [WARN ] com.ive.Main - Result: FAIL - 4/4 Excel row(s) have errors. See: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\test\resultado_sb_dato_operacion_fondos_20260803_122144.xlsx
-2026-08-03 12:21:48.932 [INFO ] com.ive.Main - Interface Validation Engine - done
-2026-08-03 23:09:03.364 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-multi-sheet.xlsx
-2026-08-03 23:09:04.488 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 2 sheet(s).
-2026-08-03 23:09:04.504 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'valid_sheet': 2 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:04.507 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'invalid_sheet': missing 'POSICION DE CAMPOS' row. Skipping.
-2026-08-03 23:09:04.508 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
-2026-08-03 23:09:04.527 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-campo-fallback.xlsx
-2026-08-03 23:09:04.566 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
-2026-08-03 23:09:04.568 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'test_fallback': CAMPO row (index 3) has no field names. Using next row as fallback.
-2026-08-03 23:09:04.569 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_fallback': 2 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:04.571 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
-2026-08-03 23:09:04.575 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
-2026-08-03 23:09:04.606 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
-2026-08-03 23:09:04.609 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:04.610 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
-2026-08-03 23:09:04.617 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
-2026-08-03 23:09:04.654 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
-2026-08-03 23:09:04.656 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:04.657 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
-2026-08-03 23:09:04.660 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
-2026-08-03 23:09:04.693 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
-2026-08-03 23:09:04.695 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:04.695 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
-2026-08-03 23:09:04.707 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
-2026-08-03 23:09:04.749 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
-2026-08-03 23:09:04.752 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:04.752 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
-2026-08-03 23:09:04.766 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
-2026-08-03 23:09:04.806 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
-2026-08-03 23:09:04.808 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:04.808 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
-2026-08-03 23:09:04.814 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-conditional-obligatoriedad.xlsx
-2026-08-03 23:09:04.841 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
-2026-08-03 23:09:04.842 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'test_conditional': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA)' treated as REQUIRED.
-2026-08-03 23:09:04.842 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_conditional': 3 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:04.842 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
-2026-08-03 23:09:04.847 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
-2026-08-03 23:09:04.874 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
-2026-08-03 23:09:04.875 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:04.875 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
-2026-08-03 23:09:04.880 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\Sabanas Fondos Diccionario de Datos V8 QA.xlsx
-2026-08-03 23:09:05.402 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 7 sheet(s).
-2026-08-03 23:09:05.406 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_transacciones_fondos', column 20: invalid position '}'. Skipping.
-2026-08-03 23:09:05.408 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_transacciones_fondos': 29 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:05.409 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': CAMPO row (index 3) has no field names. Using next row as fallback.
-2026-08-03 23:09:05.430 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 23:09:05.431 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 23:09:05.431 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 23:09:05.431 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de Vivienda y Garantía' treated as REQUIRED.
-2026-08-03 23:09:05.432 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
-2026-08-03 23:09:05.432 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
-2026-08-03 23:09:05.432 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
-2026-08-03 23:09:05.433 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 23:09:05.433 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
-2026-08-03 23:09:05.434 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
-2026-08-03 23:09:05.434 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
-2026-08-03 23:09:05.435 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
-2026-08-03 23:09:05.436 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
-2026-08-03 23:09:05.502 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': 49 field(s), 13 data row(s) loaded.
-2026-08-03 23:09:05.504 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_cuentas_por_cobrar': 27 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:05.507 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_tasa_compensada': 32 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:05.508 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_revalorizacion_20270': 16 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:05.510 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.510 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.510 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.511 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.511 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA, AUX). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.512 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA, AUX, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.512 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AUX, CEA, REC, LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.512 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.512 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.512 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.513 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.513 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.513 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.514 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.514 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.514 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.515 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.515 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.516 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.516 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.516 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.517 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.517 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.517 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.518 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.518 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ,AUX,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.518 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.518 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.518 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.520 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.520 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ) y tipo de liquidación es excluSIón. Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.521 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.521 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.521 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.521 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.522 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ) y es una liquidación maSIva. Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.522 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.522 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.523 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.523 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.524 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.524 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.524 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.524 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.524 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.525 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
-2026-08-03 23:09:05.527 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': 75 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:05.538 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_traslados': 17 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:05.539 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 7 valid sheet(s).
-2026-08-03 23:09:05.574 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-multi-sheet.xlsx
-2026-08-03 23:09:05.602 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 2 sheet(s).
-2026-08-03 23:09:05.602 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'valid_sheet': 2 field(s), 0 data row(s) loaded.
-2026-08-03 23:09:05.603 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'invalid_sheet': missing 'POSICION DE CAMPOS' row. Skipping.
-2026-08-03 23:09:05.603 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+2026-08-06 22:50:08.650 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-multi-sheet.xlsx
+2026-08-06 22:50:09.541 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 2 sheet(s).
+2026-08-06 22:50:09.554 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'valid_sheet': 2 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:09.556 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'invalid_sheet': missing 'POSICION DE CAMPOS' row. Skipping.
+2026-08-06 22:50:09.556 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+2026-08-06 22:50:09.572 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-campo-fallback.xlsx
+2026-08-06 22:50:09.601 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+2026-08-06 22:50:09.601 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'test_fallback': CAMPO row (index 3) has no field names. Using next row as fallback.
+2026-08-06 22:50:09.601 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_fallback': 2 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:09.607 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+2026-08-06 22:50:09.610 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
+2026-08-06 22:50:09.635 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+2026-08-06 22:50:09.637 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:09.637 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+2026-08-06 22:50:09.643 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
+2026-08-06 22:50:09.670 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+2026-08-06 22:50:09.673 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:09.673 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+2026-08-06 22:50:09.678 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
+2026-08-06 22:50:09.726 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+2026-08-06 22:50:09.727 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:09.729 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+2026-08-06 22:50:09.735 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
+2026-08-06 22:50:09.765 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+2026-08-06 22:50:09.766 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:09.766 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+2026-08-06 22:50:09.778 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
+2026-08-06 22:50:09.810 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+2026-08-06 22:50:09.811 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:09.811 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+2026-08-06 22:50:09.816 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-conditional-obligatoriedad.xlsx
+2026-08-06 22:50:09.846 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+2026-08-06 22:50:09.846 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'test_conditional': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA)' treated as REQUIRED.
+2026-08-06 22:50:09.848 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_conditional': 3 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:09.848 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+2026-08-06 22:50:09.850 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-simple.xlsx
+2026-08-06 22:50:09.876 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 1 sheet(s).
+2026-08-06 22:50:09.876 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'test_simple': 3 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:09.877 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).
+2026-08-06 22:50:09.880 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\Sabanas Fondos Diccionario de Datos V8 QA.xlsx
+2026-08-06 22:50:10.338 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 7 sheet(s).
+2026-08-06 22:50:10.346 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_transacciones_fondos', column 20: invalid position '}'. Skipping.
+2026-08-06 22:50:10.349 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_transacciones_fondos': 29 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:10.350 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': CAMPO row (index 3) has no field names. Using next row as fallback.
+2026-08-06 22:50:10.368 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
+2026-08-06 22:50:10.369 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
+2026-08-06 22:50:10.370 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
+2026-08-06 22:50:10.370 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de Vivienda y Garantía' treated as REQUIRED.
+2026-08-06 22:50:10.371 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
+2026-08-06 22:50:10.371 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
+2026-08-06 22:50:10.371 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
+2026-08-06 22:50:10.371 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
+2026-08-06 22:50:10.372 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
+2026-08-06 22:50:10.372 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda o garantía' treated as REQUIRED.
+2026-08-06 22:50:10.372 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de vivienda' treated as REQUIRED.
+2026-08-06 22:50:10.374 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
+2026-08-06 22:50:10.374 [WARN ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': conditional OBLIGATORIEDAD 'Si para fondo de garantía' treated as REQUIRED.
+2026-08-06 22:50:10.437 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_operacion_fondos_202': 49 field(s), 13 data row(s) loaded.
+2026-08-06 22:50:10.439 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_cuentas_por_cobrar': 27 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:10.443 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_tasa_compensada': 32 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:10.446 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_revalorizacion_20270': 16 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:10.447 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.448 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.448 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.448 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.449 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA, AUX). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.449 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA, AUX, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.449 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AUX, CEA, REC, LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.449 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.450 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.450 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.450 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.451 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.451 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.451 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.451 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.451 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.452 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.452 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.452 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.453 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (REI). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.453 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.453 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.453 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.453 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.454 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.454 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ,AUX,CEA). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.454 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.454 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.455 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.455 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.455 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ) y tipo de liquidación es excluSIón. Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.455 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.456 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.457 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.457 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.457 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ) y es una liquidación maSIva. Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.457 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.458 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.458 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.459 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.459 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.460 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF, REAC). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.460 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.461 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.461 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (AMA,CEA, AUX,LIQ, REC, REI, TEF). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.462 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': conditional OBLIGATORIEDAD 'SI cuando Tipo de Proceso (LIQ). Para los otros Procesos Especiales va Null.' treated as REQUIRED.
+2026-08-06 22:50:10.465 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'sb_dato_procesos_especiales': 75 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:10.466 [INFO ] com.ive.dictionary.DictionaryReader - Sheet '   sb_dato_traslados': 17 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:10.467 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 7 valid sheet(s).
+2026-08-06 22:50:10.515 [INFO ] com.ive.dictionary.DictionaryReader - Reading dictionary: C:\Users\RubenDarioIbarraVirl\Documents\atmSabanas\atm\atmSabanas\target\test-classes\dictionary\test-multi-sheet.xlsx
+2026-08-06 22:50:10.545 [INFO ] com.ive.dictionary.DictionaryReader - Workbook contains 2 sheet(s).
+2026-08-06 22:50:10.547 [INFO ] com.ive.dictionary.DictionaryReader - Sheet 'valid_sheet': 2 field(s), 0 data row(s) loaded.
+2026-08-06 22:50:10.547 [WARN ] com.ive.dictionary.DictionaryReader - Sheet 'invalid_sheet': missing 'POSICION DE CAMPOS' row. Skipping.
+2026-08-06 22:50:10.547 [INFO ] com.ive.dictionary.DictionaryReader - Dictionary loaded successfully: 1 valid sheet(s).

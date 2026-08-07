@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.ive.dictionary.DictionaryReaderTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.990 s -- in com.ive.dictionary.DictionaryReaderTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.474 s -- in com.ive.dictionary.DictionaryReaderTest

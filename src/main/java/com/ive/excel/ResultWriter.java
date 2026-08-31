@@ -126,7 +126,7 @@ public class ResultWriter {
         Row row  = ws.createRow(0);
         String status = summary.passed() ? "PASS" : "FAIL";
         String text = String.format(
-                "Pestaña: %s | Sábana: %s | Filas Excel: %d | Filas Sábana: %d | Errores: %d | Estado: %s",
+                "Pestaña: %s | TXT: %s | Filas Excel: %d | Filas TXT: %d | Errores: %d | Estado: %s",
                 summary.sheetName(), summary.sabanaFileName(),
                 summary.totalExcelRows(), summary.totalSabanaRows(),
                 summary.totalErrors(), status);

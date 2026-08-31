@@ -22,8 +22,8 @@ public record FieldError(
     public String toObservation() {
         return switch (errorType) {
             case REQUIRED  -> "Campo obligatorio vacío: " + fieldName;
-            case MISMATCH  -> "Campo [" + fieldName + "]: Excel='" + excelValue + "' Sábana='" + sabanaValue + "'";
-            case NOT_FOUND -> "Registro no encontrado en la sábana";
+            case MISMATCH  -> "Campo [" + fieldName + "]: Excel='" + excelValue + "' TXT='" + sabanaValue + "'";
+            case NOT_FOUND -> "Registro no encontrado en el TXT";
         };
     }
 }

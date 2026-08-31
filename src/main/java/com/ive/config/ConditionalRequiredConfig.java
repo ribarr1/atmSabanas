@@ -73,10 +73,6 @@ public final class ConditionalRequiredConfig {
 
         RULES_BY_TAB = Map.of(
                 "sb_dato_operacion_fondos", opFondosRules,
-                "sb_dato_transacciones_fondos", List.of(
-                        // Col G (pos 6): required only if its own value is C (Credito) or D (Debito)
-                        new ConditionalRequiredRule(List.of(6), 6, List.of("C", "D"))
-                ),
                 "sb_dato_procesos_especiales", List.of(
                         // pos 5 (dp_aplicacion_previa): AMA
                         new ConditionalRequiredRule(List.of(5), 1, List.of("AMA")),

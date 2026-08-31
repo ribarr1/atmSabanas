@@ -92,20 +92,24 @@ public final class ConditionalRequiredConfig {
                         new ConditionalRequiredRule(List.of(17, 18, 19), 1, List.of("REC")),
                         // pos 20-24 (dp_id_liquidacion..dp_estado_orden_pago_liquidacion): REI
                         new ConditionalRequiredRule(List.of(20, 21, 22, 23, 24), 1, List.of("REI")),
-                        // pos 25 (dp_orden_pago_liquidacion): LIQ, REI
-                        new ConditionalRequiredRule(List.of(25), 1, List.of("LIQ", "REI")),
+                        // pos 25 (dp_orden_pago_liquidacion): REI only (LIQ removed in V18)
+                        new ConditionalRequiredRule(List.of(25), 1, List.of("REI")),
                         // pos 26-29 (dp_valor_transferir..dp_codigo_origen): TEF
                         new ConditionalRequiredRule(List.of(26, 27, 28, 29), 1, List.of("TEF")),
-                        // pos 31 (dp_ids_orden_pago): LIQ, AUX, CEA
-                        new ConditionalRequiredRule(List.of(31), 1, List.of("LIQ", "AUX", "CEA")),
+                        // pos 31 (dp_ids_orden_pago): LIQ, AUX, CEA, AMA (AMA added in V18)
+                        new ConditionalRequiredRule(List.of(31), 1, List.of("LIQ", "AUX", "CEA", "AMA")),
                         // pos 30,32-42,46,55: LIQ only
                         new ConditionalRequiredRule(
                                 List.of(30, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 46, 55), 1,
                                 List.of("LIQ")),
-                        // pos 44,47-52 (dp_id_oficial_creacion, dp_fecha_aprobacion, etc.): all types
+                        // pos 44,47,48,50-52 (dp_observaciones pos 49 removed - now NO in V18): all types
                         new ConditionalRequiredRule(
-                                List.of(44, 47, 48, 49, 50, 51, 52), 1,
-                                List.of("AMA", "CEA", "AUX", "LIQ", "REC", "REI", "TEF", "REAC"))
+                                List.of(44, 47, 48, 50, 51, 52), 1,
+                                List.of("AMA", "CEA", "AUX", "LIQ", "REC", "REI", "TEF", "REAC")),
+                        // pos 56-61 (dp_aplicativo..dp_fecha_generacion): AMA only (V18)
+                        new ConditionalRequiredRule(
+                                List.of(56, 57, 58, 59, 60, 61), 1,
+                                List.of("AMA"))
                 )
         );
     }

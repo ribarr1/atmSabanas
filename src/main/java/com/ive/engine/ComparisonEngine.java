@@ -144,7 +144,7 @@ public class ComparisonEngine {
         // 3. Field-by-field comparison
         for (FieldDefinition fd : sheet.fields()) {
             String fieldName   = fd.getFieldName().toLowerCase().trim();
-            String excelValue  = excelRow.get(fieldName).trim();
+            String excelValue  = excelRow.get(fieldName).strip();
 
             int pos = fd.getPosition(); // 1-based
 
@@ -184,7 +184,8 @@ public class ComparisonEngine {
      */
     private static String normalizeValue(String raw) {
         if (raw == null) return "";
-        String s = raw.trim().toLowerCase();
+        String s = raw.strip().toLowerCase();
+        if (s.isBlank()) return "";
         // Handle datetime vs date: if sábana has "yyyy-MM-dd HH:mm:ss" and Excel has "yyyy-MM-dd",
         // compare only the date part (first 10 characters)
         if (s.length() > 10 && s.charAt(4) == '-' && s.charAt(7) == '-' && s.charAt(10) == ' ') {
